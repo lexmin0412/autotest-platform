@@ -1,8 +1,8 @@
 from datetime import datetime
-from app import pity
+from app import ap
 from app.utils.logger import Log
 
-@pity.route('/')
+@ap.route('/')
 def hello_world():
     log = Log("hello world")
     log.info("有人访问了你的网站了")
@@ -12,4 +12,4 @@ def hello_world():
 
 
 if __name__ == '__main__':
-    pity.run()
+    ap.run()
